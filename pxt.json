@@ -1,7 +1,7 @@
 {
     "name": "pxt-json",
-    "version": "0.0.0",
-    "description": "",
+    "version": "1.0.0",
+    "description": "JSON Conversion",
     "dependencies": {
         "core": "*"
     },
