@@ -2,6 +2,7 @@
     "name": "pxt-json",
     "version": "0.0.0",
     "description": "",
+    "dependencies": {},
     "files": [
         "README.md",
         "main.ts"
