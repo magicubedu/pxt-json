@@ -49,10 +49,16 @@ namespace magicube.json {
                 return "\\\\";
             case "\"":
                 return "\\\"";
+            case "\b":
+                return "\\b";
+            case "\t":
+                return "\\t";
             case "\r":
                 return "\\r";
             case "\n":
                 return "\\n";
+            case "\f":
+                return "\\f";
             default:
                 return c;
         }
