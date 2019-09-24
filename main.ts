@@ -8,8 +8,9 @@ namespace magicube.json {
     function convertToJsonValue(data: any, undefinedAsNull = false): string | undefined {
         switch (typeof data) {
             case "boolean":
-            case "number":
                 return `${data}`;
+            case "number":
+                return data !== data || data === 1 / 0 ? "null" : `${data}`;
             case "string":
                 return quoteString(data);
             case "object":
