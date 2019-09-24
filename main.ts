@@ -20,8 +20,8 @@ namespace magicube.json {
                 if (Array.isArray(data)) {
                     return `[${(data as any[]).map(v => convertToJsonValue(v, true)).join(",")}]`;
                 }
-                if (typeof data.toJSON === "function") {
-                    return convertToJsonValue(data.toJSON());
+                if (typeof data["toJSON"] === "function") {
+                    return convertToJsonValue(data["toJSON"]());
                 }
                 return `{${Object.keys(data).reduce((accumulator: string[], currentValue) => {
                     const v = convertToJsonValue(data[currentValue]);
